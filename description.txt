@@ -1,0 +1,18 @@
+
+Caution!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The generate result may be different from vanilla.
+Therefore, please do not use it for RTAs.
+
+Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Generate worlds quickly!!
+Use up to four threads.(Vanilla is single thread.)
+In my environment, world generation for the Large size was sped up from about 60 seconds to 35 seconds.
+
+History
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+v0.1.0 
+  Release
+
+
