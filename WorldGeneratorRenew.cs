@@ -13,9 +13,6 @@ using System.Collections.Specialized;
 using System.Reflection;
 using log4net;
 // using Terraria.ModLoader.UI;
-using Terraria.GameContent.Generation;
-using Microsoft.Xna.Framework;
-using Terraria.GameContent.Biomes;
 
 
 namespace WorldGenSuperFast
@@ -143,7 +140,7 @@ namespace WorldGenSuperFast
 				FieldInfo tMLInfo= Common.getFieldInfo(typeof(Logging),"tML");
 				if(tMLInfo == null)
 				{
-					return;
+					throw ex;
 				}
 				((ILog)tMLInfo.GetValue(tMLInfo)).Error((object)text);
 
