@@ -58,7 +58,7 @@ namespace WorldGenSuperFast
 
 			runParallel( progress, stopwatch, new String[] {"Reset"});
 			runParallel( progress, stopwatch, new String[] {"Terrain"});
-			runParallel( progress, stopwatch, new String[] {"Tunnels","Sand","Mount Caves","Dirt Wall Backgrounds","Rocks In Dirt","Dirt In Rocks","Clay","Small Holes","Dirt Layer Caves"});
+			runParallel( progress, stopwatch, new String[] {"Tunnels","Sand","Mount Caves","Dirt Wall Backgrounds","Rocks In Dirt","Dirt In Rocks","Clay","Small Holes","Dirt Layer Caves","Rock Layer Caves","Surface Caves"});
 			runParallel( progress, stopwatch, new String[] {"Slush Check"});
 			runParallel( progress, stopwatch, new String[] {"Grass","Jungle"});
 			runParallel( progress, stopwatch, new String[] {"Marble","Granite","Mud Caves To Grass","Full Desert","Floating Islands"});
