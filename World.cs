@@ -9,6 +9,7 @@ using System.Reflection;
 using System.Linq;
 using System.Text;
 using System.IO;
+using Terraria.GameContent.Generation;
 
 namespace WorldGenSuperFast
 {
@@ -18,6 +19,8 @@ namespace WorldGenSuperFast
 		List<GenPass> _passes;
 
 		WorldGenerator _generator;
+
+		private List<Exception> currnetError;
 
 		override public void ModifyWorldGenTasks(List<GenPass> tasks, ref float totalWeight){
 			
@@ -45,7 +48,22 @@ namespace WorldGenSuperFast
 			this._passesInfo.SetValue(this._generator,new List<GenPass>());
 			WorldGeneratorRenew worldGeneratorRenew = new WorldGeneratorRenew(_seed);
 			worldGeneratorRenew._passes=this._passes;
-			worldGeneratorRenew.GenerateWorld();
+			currnetError = worldGeneratorRenew.GenerateWorld();
+
+			if(currnetError.Count >= 1)
+			{
+				List<GenPass> genpassList = new List<GenPass>();
+				
+				foreach(Exception exception in currnetError)
+				{
+					genpassList.Add(new PassLegacy("viewError",delegate(GenerationProgress progress)
+					{
+						throw exception;
+					}));
+				}
+
+				_passesInfo.SetValue(this._generator,genpassList);
+			}
 
 		}
 

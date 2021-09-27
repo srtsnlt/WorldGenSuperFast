@@ -12,6 +12,14 @@ In my PC, world generation for the Large size was sped up from about 60 seconds 
 
 History
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+v0.1.4
+  o Speed up generation
+  o Support for some mods
+      Calamity Mod,Thorium Mod,Spirit Mod
+  o bug fix
+      not confrict dungeon and corruption
+      error handling
+
 v0.1.3
   bug fix (trees display correctly)
 
@@ -23,5 +31,3 @@ v0.1.1
 
 v0.1.0 
   Release
-
-
