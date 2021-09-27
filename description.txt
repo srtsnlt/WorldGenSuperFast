@@ -12,6 +12,9 @@ In my PC, world generation for the Large size was sped up from about 60 seconds 
 
 History
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+v0.1.5
+  Increased stability
+
 v0.1.4
   o Speed up generation
   o Support for some mods

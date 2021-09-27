@@ -84,7 +84,8 @@ namespace WorldGenSuperFast
 				runParallel( progress, stopwatch,"Parallel", new String[] {"Marble","Granite","Mud Caves To Grass","Full Desert","Floating Islands"});
 				runParallel( progress, stopwatch,"Parallel", new String[] {"Mushroom Patches","Dungeon"});
 				runParallel( progress, stopwatch,"Parallel", new String[] {"Mud To Dirt","Silt","Shinies","Thorium Mod: Shinies","EvilIsland","Thorium Mod: Biome Chests","Calamity Mod: Biome Chests","Webs","Underworld","Lakes","Slush","Corruption","Mud Caves To Grass","Beaches","Gems","Thorium Mod: Gem Ores","Gravitating Sand","Clean Up Dirt","Pyramids","Dirt Rock Wall Runner","Living Trees","Briar"});
-				runParallel( progress, stopwatch,"Parallel", new String[] {"Wood Tree Walls","Altars","Wet Jungle","Remove Water From Sand","SunkenSea","Jungle Temple","Hives","Jungle Chests","Smooth World","Gem Caves"});
+				runParallel( progress, stopwatch,"Parallel", new String[] {"Wood Tree Walls","Altars","Wet Jungle","Remove Water From Sand","SunkenSea","Jungle Temple","Hives","Jungle Chests","Smooth World"});
+				runParallel( progress, stopwatch,"Parallel", new String[] {"Gem Caves"});
 				runParallel( progress, stopwatch,"Parallel", new String[] {"Settle Liquids","Pots","Hellforge","Spreading Grass"});
 				runParallel( progress, stopwatch,"Parallel", new String[] {"Waterfalls","Ice","Wall Variety","Traps","Life Crystals","Statues","Buried Chests","Surface Chests","Jungle Chests Placement","Asteroids"});
 				runParallel( progress, stopwatch,"Parallel", new String[] {"Moss","Temple","Jungle Trees","Floating Island Houses"});
